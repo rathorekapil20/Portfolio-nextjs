@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import Link from "next/link";
 
 const TAB_DATA = [
   {
@@ -36,8 +37,8 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Introduction to C++ (Tap here)</li>
-        <li>Data Structures & Algorithm (Tap here)</li>
+        <li><Link href="https://certificate.codingninjas.com/verify/bbb7d7b648aef9bd" target="_blank">Introduction to C++ (Tap here)</Link></li>
+        <li><Link href="https://certificate.codingninjas.com/verify/75902f9e7263e83a" target="_blank">Data Structures & Algorithm (Tap here)</Link></li>
       </ul>
     ),
   },
@@ -90,10 +91,10 @@ const AboutSection = () => {
             interactive and responsive web applications. I have experience
             working with JavaScript, React, TypeScript, Next.js, Express,
             MongoDB, HTML, Tailwind CSS, and Git. Using frontend technologies, I
-            create fast, modern websites. Let's collaborate on your next digital
+            create fast, modern websites. Let&apos;s collaborate on your next digital
             venture!
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="overflow-x-auto whitespace-nowrap over md:flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
